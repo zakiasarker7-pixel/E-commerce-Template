@@ -1,0 +1,35 @@
+body{
+    font-family:Arial,sans-serif;
+    background:#f8f9fa;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.carousel img{
+    height:500px;
+    object-fit:cover;
+}
+
+.card{
+    transition:.3s;
+    border:none;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,.2);
+}
+
+.btn{
+    border-radius:30px;
+}
+
+footer{
+    background:#111;
+    color:#fff;
+    padding:30px;
+    text-align:center;
+}
