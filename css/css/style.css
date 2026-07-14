@@ -1,0 +1,485 @@
+/* =========================
+   EcommerceX ThemeForest CSS
+========================= */
+
+
+/* Global */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins', Arial, sans-serif;
+    background:#f8f9fa;
+    color:#333;
+}
+
+
+a{
+    text-decoration:none;
+}
+
+
+
+/* =========================
+   Navbar
+========================= */
+
+.navbar{
+    padding:15px 0;
+}
+
+.navbar-brand{
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.nav-link{
+    font-weight:500;
+    margin-left:15px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#ffc107 !important;
+}
+
+
+
+/* =========================
+   Hero Slider
+========================= */
+
+.carousel img{
+
+    height:550px;
+    object-fit:cover;
+
+}
+
+
+.carousel-item{
+
+    transition:transform 1s ease;
+
+}
+
+
+.carousel-caption{
+
+    background:rgba(0,0,0,.55);
+    padding:30px;
+    border-radius:15px;
+
+    animation:fadeUp 1s;
+
+}
+
+
+.carousel-caption h1{
+
+    font-size:45px;
+    font-weight:700;
+
+}
+
+
+.carousel-caption p{
+
+    font-size:20px;
+
+}
+
+
+
+@keyframes fadeUp{
+
+from{
+
+opacity:0;
+transform:translateY(40px);
+
+}
+
+to{
+
+opacity:1;
+transform:translateY(0);
+
+}
+
+}
+
+
+
+/* =========================
+   Buttons
+========================= */
+
+.btn{
+
+    border-radius:30px;
+    padding:12px 30px;
+    transition:.3s;
+    font-weight:600;
+
+}
+
+
+.btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+
+
+/* =========================
+   Section Title
+========================= */
+
+section h2{
+
+    font-weight:700;
+    margin-bottom:30px;
+
+}
+
+
+
+/* =========================
+   Category Cards
+========================= */
+
+.category-card{
+
+    background:white;
+    padding:30px;
+    text-align:center;
+    border-radius:15px;
+
+    transition:.4s;
+
+}
+
+
+.category-card i{
+
+    font-size:45px;
+    margin-bottom:15px;
+
+}
+
+
+
+.category-card:hover{
+
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+
+}
+
+
+
+/* =========================
+   Product Card
+========================= */
+
+
+.product-card{
+
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+
+    transition:.4s;
+
+}
+
+
+
+.product-card:hover{
+
+    transform:translateY(-12px);
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+.product-card img{
+
+    width:100%;
+    height:280px;
+    object-fit:cover;
+
+}
+
+
+
+.product-card .price{
+
+    color:#0d6efd;
+    font-size:22px;
+    font-weight:bold;
+
+}
+
+
+
+.product-card .rating{
+
+    color:#ffc107;
+
+}
+
+
+
+/* Product Image Zoom */
+
+.product-card img{
+
+transition:.5s;
+
+}
+
+
+.product-card:hover img{
+
+transform:scale(1.08);
+
+}
+
+
+
+/* =========================
+   Offer Banner
+========================= */
+
+
+.offer-banner{
+
+    background:linear-gradient(
+    135deg,
+    #0d6efd,
+    #6610f2
+    );
+
+    color:white;
+    padding:60px;
+    border-radius:20px;
+
+}
+
+
+
+/* =========================
+   Newsletter
+========================= */
+
+
+.newsletter{
+
+    background:white;
+    padding:50px;
+    border-radius:20px;
+
+}
+
+
+.newsletter input{
+
+    border-radius:30px;
+    padding:15px;
+
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+
+footer{
+
+    background:#111;
+    color:white;
+    padding:40px 0;
+
+}
+
+
+footer a{
+
+    color:#ccc;
+
+}
+
+
+footer a:hover{
+
+    color:white;
+
+}
+
+
+
+/* =========================
+   Cart Page
+========================= */
+
+
+.table{
+
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+
+}
+
+
+
+/* =========================
+   Login/Register
+========================= */
+
+
+.auth-box{
+
+    background:white;
+    padding:40px;
+    border-radius:20px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+
+
+/* =========================
+   Animation
+========================= */
+
+
+.fade-in{
+
+animation:fadeIn 1s;
+
+}
+
+
+@keyframes fadeIn{
+
+from{
+
+opacity:0;
+
+}
+
+to{
+
+opacity:1;
+
+}
+
+}
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+
+@media(max-width:992px){
+
+
+.carousel img{
+
+height:400px;
+
+}
+
+
+.carousel-caption h1{
+
+font-size:30px;
+
+}
+
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+
+.carousel img{
+
+height:300px;
+
+}
+
+
+.carousel-caption{
+
+padding:15px;
+
+}
+
+
+.carousel-caption h1{
+
+font-size:22px;
+
+}
+
+
+.product-card img{
+
+height:220px;
+
+}
+
+
+.offer-banner{
+
+padding:30px;
+
+}
+
+
+}
+
+
+@media(max-width:480px){
+
+
+.carousel-caption p{
+
+display:none;
+
+}
+
+
+.btn{
+
+padding:10px 20px;
+
+}
+
+
+}
