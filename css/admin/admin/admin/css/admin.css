@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+
+/* Sidebar */
+
+.sidebar a,
+.col-md-2 a{
+    text-decoration:none;
+    padding:10px;
+    border-radius:5px;
+}
+
+
+.col-md-2 a:hover{
+    background:#343a40;
+}
+
+
+/* Dashboard Cards */
+
+.card{
+    border:none;
+    border-radius:12px;
+}
+
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+
+/* Table */
+
+.table img{
+    width:60px;
+    height:60px;
+    object-fit:cover;
+}
+
+
+/* Buttons */
+
+.btn{
+    border-radius:20px;
+}
+
+
+/* Mobile Responsive */
+
+@media(max-width:768px){
+
+.col-md-2{
+    min-height:auto !important;
+}
+
+.col-md-10{
+    padding:15px;
+}
+
+}
